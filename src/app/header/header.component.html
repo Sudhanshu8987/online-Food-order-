@@ -1,0 +1,10 @@
+<header>
+  <div class="container">
+    <a href="#" routerLink="/" class="logo">Wow Food 😊</a>
+    <nav>
+      <ul>
+        <li><a href="#" routerLink="/cart-page">Cart<span matBadge="{{cartService.getCartItemCount()}}" matBadgeSize="medium" *ngIf="cart && cart.items.length >0"></span></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
